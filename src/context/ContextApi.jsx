@@ -12,7 +12,7 @@ const ContextApi = ({children}) => {
     const [data, setData] = useState('')
 
     useEffect(()=>{
-        // setEvents()
+        setEvents()
         const events = getEvents()
         setData(events)
     }, [])
